@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #007bff;
+    --dark-blue: #0d1117;
+    --darker-blue: #090d13;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-blue) !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.login-form {
+    background-color: var(--darker-blue);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    background-color: var(--dark-blue);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+    background-color: var(--dark-blue);
+    border-color: var(--primary-color);
+    color: white;
+    box-shadow: none;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+}
+
+.password-toggle:hover {
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    font-size: 0.875rem;
+}
+
+.footer a:hover {
+    color: white !important;
+}
